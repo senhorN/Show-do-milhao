@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA71B891-8A2D-4799-96FA-13A9CA07D8EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JogoDoMilhao</RootNamespace>
+    <AssemblyName>JogoDoMilhao</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cadastroDoJogador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroDoJogador.Designer.cs">
+      <DependentUpon>cadastroDoJogador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="decimaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="decimaPergunta.Designer.cs">
+      <DependentUpon>decimaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infoDoJogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="infoDoJogo.Designer.cs">
+      <DependentUpon>infoDoJogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nonaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nonaPergunta.Designer.cs">
+      <DependentUpon>nonaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oitavaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oitavaPergunta.Designer.cs">
+      <DependentUpon>oitavaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="primeiraPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="primeiraPergunta.Designer.cs">
+      <DependentUpon>primeiraPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quartaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quartaPergunta.Designer.cs">
+      <DependentUpon>quartaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quintaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quintaPergunta.Designer.cs">
+      <DependentUpon>quintaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="segundaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="segundaPergunta.Designer.cs">
+      <DependentUpon>segundaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setimaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setimaPergunta.Designer.cs">
+      <DependentUpon>setimaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sextaPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sextaPergunta.Designer.cs">
+      <DependentUpon>sextaPergunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="terceiraPergunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="terceiraPergunta.Designer.cs">
+      <DependentUpon>terceiraPergunta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cadastroDoJogador.resx">
+      <DependentUpon>cadastroDoJogador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="decimaPergunta.resx">
+      <DependentUpon>decimaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="infoDoJogo.resx">
+      <DependentUpon>infoDoJogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nonaPergunta.resx">
+      <DependentUpon>nonaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oitavaPergunta.resx">
+      <DependentUpon>oitavaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="primeiraPergunta.resx">
+      <DependentUpon>primeiraPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="quartaPergunta.resx">
+      <DependentUpon>quartaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quintaPergunta.resx">
+      <DependentUpon>quintaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="segundaPergunta.resx">
+      <DependentUpon>segundaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setimaPergunta.resx">
+      <DependentUpon>setimaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sextaPergunta.resx">
+      <DependentUpon>sextaPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="terceiraPergunta.resx">
+      <DependentUpon>terceiraPergunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Show_do_milhao-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundo-azul-curvas-escuro.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
