@@ -21,5 +21,3 @@ interface moderna e simples
 
 
 
-![www](https://user-images.githubusercontent.com/90424448/184129619-06b97677-668c-42e3-a7ff-0240edda09c4.jpg)
-<p>manso</p>
