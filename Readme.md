@@ -22,7 +22,7 @@ interface moderna e simples
 
 
 ## Nota 📑 
-O jogo do Show do milhão esta em desenvolvimento... ✅
+O jogo do Show do milhão terá um remake✅
 
 
 
